@@ -119,18 +119,6 @@ function App() {
     }));
   };
 
-  const handleTitleChange = (e) => {
-    const newTitle = e.target.value;
-    setTitle(newTitle);
-    localStorage.setItem('countdown-title', newTitle);
-    
-    // Broadcast change to other tabs
-    window.dispatchEvent(new StorageEvent('storage', {
-      key: 'countdown-title',
-      newValue: newTitle
-    }));
-  };
-
   const isCountdownFinished = timeLeft.days === 0 && timeLeft.hours === 0 && 
                               timeLeft.minutes === 0 && timeLeft.seconds === 0;
 
@@ -196,17 +184,6 @@ function App() {
       </button>
       
       <div className="countdown-container">
-        <div className="settings">
-          {/* <input
-            type="text"
-            value={title}
-            onChange={handleTitleChange}
-            placeholder="Event Title"
-            className="title-input"
-            disabled={!isCountdownActive}
-          /> */}
-        </div>
-        
         <h1 className="countdown-title">{title}</h1>
         
         {!isCountdownActive ? (
