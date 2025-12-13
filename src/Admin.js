@@ -10,7 +10,7 @@ function Admin({ onSetCountdown, onStartCountdown, isCountdownActive, currentDat
   const handleLogin = (e) => {
     e.preventDefault();
     // Simple password check - you can make this more secure
-    if (adminPassword === 'admin123') {
+    if (adminPassword === 'kxgxn!!') {
       setIsAuthenticated(true);
     } else {
       alert('Incorrect password!');
@@ -48,7 +48,7 @@ function Admin({ onSetCountdown, onStartCountdown, isCountdownActive, currentDat
             />
             <button type="submit" className="login-btn">Login</button>
           </form>
-          <p className="hint">Hint: admin123</p>
+          <p className="hint">Hint: kxgxn!!</p>
         </div>
       </div>
     );
