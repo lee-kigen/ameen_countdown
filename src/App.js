@@ -5,10 +5,10 @@ import './App.css';
 function App() {
   // Initialize state from localStorage or defaults
   const [targetDate, setTargetDate] = useState(() => 
-    localStorage.getItem('countdown-targetDate') || '2025-12-31T23:59:59'
+    localStorage.getItem('countdown-targetDate') || '2025-12-17T23:59:59'
   );
   const [title, setTitle] = useState(() => 
-    localStorage.getItem('countdown-title') || 'New Year 2026'
+    localStorage.getItem('countdown-title') || '🎉 Al Amiin FX Comming Soon 🎊'
   );
   const [showAdmin, setShowAdmin] = useState(false);
   const [isCountdownActive, setIsCountdownActive] = useState(() => 
