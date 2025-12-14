@@ -48,7 +48,6 @@ function Admin({ onSetCountdown, onStartCountdown, isCountdownActive, currentDat
             />
             <button type="submit" className="login-btn">Login</button>
           </form>
-          <p className="hint">Hint: kxgxn!!</p>
         </div>
       </div>
     );
